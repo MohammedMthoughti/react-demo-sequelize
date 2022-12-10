@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.flex {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  width: 300px;
+  border-radius: 3px;
+  margin: 100px auto;
+  display: grid;
+  justify-content: center;
+  /* border: 1px solid orangered; */
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  outline: none;
+  border: none;
+  padding: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form.auth-form > input {
+  background-color: #eee;
+}
+
+button {
+  width: 100%;
+  padding: 7px;
+  /* border-radius: 5px; */
+  background-color: orange;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form.auth-form > button {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: orange;
+}
+
+.black-text {
+  color: black;
+}
+
+a {
+  color: orangered;
+}
+
+body {
+  background-color: #eee;
+}
+
+.right-container {
+  width: 100%;
+  padding: 20px;
+}
+
+a.orange-link {
+  color: orange;
 }

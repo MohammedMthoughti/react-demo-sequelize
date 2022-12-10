@@ -1,0 +1,34 @@
+
+
+table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+thead {
+    background-color: #eee;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+tr {
+    background-color: rgba(238, 238, 238, 0.2)
+}
+
+button {
+    width: 150px;
+    background-color: orange;
+}
+
+button.del-btn {
+    width: 75px;
+    background-color: rgb(255, 58, 58);
+}
+
+button.edit-btn {
+    width: 75px;
+    background-color: teal;
+}
