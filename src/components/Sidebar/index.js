@@ -1,7 +1,7 @@
 import React from "react";
 import './index.css';
-import { select } from './helper';
-import { NavLink, useLocation } from "react-router-dom";
+import { logout, select } from './helper';
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
     const { pathname } = useLocation();

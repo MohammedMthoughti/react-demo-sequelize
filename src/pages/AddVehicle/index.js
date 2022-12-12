@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../components/Sidebar';
+import { addVehicle } from '../../services/vehicle'
 import './index.css';
 
 const AddVehicle = () => {
     const navigate = useNavigate();
-
+    
     return (
         <div className='flex'>
             <Sidebar />
 
             <div className='right-container add-vehicle-section'>
                 <h2 className='black-text'>Add Vehicle</h2>
-                <form>
+                <form onSubmit={e => addVehicle(e, navigate)}>
                     <div>
                         <label>Brand</label>
                         <input name='brand' type={'text'} required />

@@ -7,12 +7,13 @@ import Register from './pages/Register';
 import Vehicle from './pages/Vehicle';
 import AddVehicle from './pages/AddVehicle';
 import EditVehicle from './pages/EditVehicle';
+import useAuthCheck from './hooks/useAuthCheck';
 
 const App = () => {
 
   return useRoutes([{
     path: '/',
-    element: <Login />
+    element: [useAuthCheck(), <Login />]
   },
   {
     path: '/register',
@@ -20,19 +21,19 @@ const App = () => {
   },
   {
     path: '/profile',
-    element: <Profile />
+    element: [useAuthCheck(), <Profile />]
   },
   {
     path: '/vehicle',
-    element: <Vehicle />
+    element: [useAuthCheck(), <Vehicle />]
   },
   {
     path: '/add-vehicle',
-    element: <AddVehicle />
+    element: [useAuthCheck(), <AddVehicle />]
   },
   {
-    path: '/edit-vehicle',
-    element: <EditVehicle />
+    path: '/edit-vehicle/:id',
+    element: [useAuthCheck(), <EditVehicle />]
   }]);
 };
 

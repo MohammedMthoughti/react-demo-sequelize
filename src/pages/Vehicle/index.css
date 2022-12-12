@@ -32,3 +32,12 @@ button.edit-btn {
     width: 75px;
     background-color: teal;
 }
+
+.vehicle-section div {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
